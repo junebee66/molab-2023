@@ -1,25 +1,55 @@
+import SwiftUI
+import PlaygroundSupport
 
-// define function to load an image from a url
-
-import UIKit
-
-// Read in an image from a url string
-func imageFor(_ str: String) -> UIImage {
-    let url = URL(string: str)
-    let imgData = try? Data(contentsOf: url!)
-    let uiImage = UIImage(data:imgData!)
-    return uiImage!
+struct Screen: View {
+    var body: some View {
+        VStack {
+            ForEach(1...4, id: \.self) { _ in
+                HStack {
+                    Spacer()
+                    VStack {
+                        Rectangle().frame(width: 60, height: 60).foregroundColor(Color(UIColor.systemRed)).cornerRadius(16)
+                        Text("App").font(.footnote).padding(.top, 2)
+                    }
+                    Spacer()
+                    VStack {
+                        Rectangle().frame(width: 60, height: 60).foregroundColor(Color(UIColor.systemOrange)).cornerRadius(16)
+                        Text("App").font(.footnote).padding(.top, 2)
+                    }
+                    Spacer()
+                    VStack {
+                        Rectangle().frame(width: 60, height: 60).foregroundColor(Color(UIColor.systemYellow)).cornerRadius(16)
+                        Text("AppY").font(.footnote).padding(.top, 20)
+                    }
+                    Spacer()
+                    VStack {
+                        Rectangle().frame(width: 60, height: 60).foregroundColor(Color(UIColor.systemGreen)).cornerRadius(16)
+                        Text("App").font(.footnote).padding(.top, 2)
+                    }
+                    Spacer()
+                }
+            }.padding(.top)
+            
+            Spacer()
+            
+            HStack {
+                Rectangle().frame(width: 60, height: 60).foregroundColor(Color(UIColor.systemBlue)).cornerRadius(16)
+                
+                Spacer()
+                
+                Rectangle().frame(width: 60, height: 60).foregroundColor(Color(UIColor.systemIndigo)).cornerRadius(16)
+                
+                Spacer()
+                
+                Rectangle().frame(width: 60, height: 60).foregroundColor(Color(UIColor.systemPurple)).cornerRadius(16)
+                
+                Spacer()
+                
+                Rectangle().frame(width: 60, height: 60).foregroundColor(Color(UIColor.systemPink)).cornerRadius(16)
+            }.padding().background(Color(UIColor.secondarySystemBackground)).cornerRadius(20).padding()
+        }
+    }
 }
 
-// profile image
-let u1 = "https://lh3.googleusercontent.com/a/AEdFTp6gdANzhWmT2dZ69WP2UB5edH-_ZitKIkD0Cwks=s80"
-imageFor(u1)
-
-// itp staff
-let u2 = "https://raw.githubusercontent.com/junebee66/molab-2023/main/Week01/images/forest-rabbit-demo.png"
-imageFor(u2)
-
-
-
-
+PlaygroundPage.current.setLiveView(Screen())
 
