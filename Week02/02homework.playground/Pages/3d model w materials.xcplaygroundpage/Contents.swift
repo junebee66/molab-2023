@@ -22,7 +22,7 @@ if let modelScene = SCNScene(named: "Duck2.dae") {
             let imageMaterial = SCNMaterial()
             
             // Set the material's diffuse contents to an image
-            if let image = UIImage(named: "flowerField.jpeg") {
+            if let image = UIImage(named: "Leafs.png") {
                 imageMaterial.diffuse.contents = image
                 geometry.materials = [imageMaterial] // Assign the material to the geometry
             }
