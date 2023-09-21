@@ -45,12 +45,12 @@ struct Screen: View {
                     Spacer()
                     VStack {
 //                        Rectangle().frame(width: 60, height: 60).foregroundColor(Color(UIColor.systemOrange)).cornerRadius(16)
-                        Image(systemName: "tree").resizable().frame(width: 30, height: 30).clipShape(Circle()).symbolEffect(.pulse)
+//                        Image(systemName: "tree").resizable().frame(width: 30, height: 30).clipShape(Circle()).symbolEffect(.pulse)
                         Text("App").font(.footnote).padding(.top, 2)
                     }
                     Spacer()
                     VStack {
-                        Image(systemName: "flower").resizable().frame(width: 30, height: 30).clipShape(Circle()).symbolEffect(.pulse)
+//                        Image(systemName: "flower").resizable().frame(width: 30, height: 30).clipShape(Circle()).symbolEffect(.pulse)
                         Text("App").font(.footnote).padding(.top, 2)
                         
                         Rectangle().frame(width: 60, height: 60).foregroundColor(Color(UIColor.systemYellow)).cornerRadius(16)
