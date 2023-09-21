@@ -26,19 +26,19 @@ func randomColor() -> UIColor {
 }
 
 // Create random cubes instead of spheres
-let numCubes = 30
+let numCubes = 50
 
 for _ in 1...numCubes {
-    let cubeWidth = randomCGFloat(from: 0.1, to: 3.0)
-    let cubeHeight = randomCGFloat(from: 0.1, to: 3.0)
-    let cubeLength = randomCGFloat(from: 0.1, to: 3.0)
+    let cubeWidth = randomCGFloat(from: 0.1, to: 5.0)
+    let cubeHeight = randomCGFloat(from: 0.1, to: 5.0)
+    let cubeLength = randomCGFloat(from: 0.1, to: 5.0)
     
     let cubeGeometry = SCNBox(width: cubeWidth, height: cubeHeight, length: cubeLength, chamferRadius: 0.0)
     let cubeNode = SCNNode(geometry: cubeGeometry)
     
-    let x = randomCGFloat(from: -10, to: 10)
-    let y = randomCGFloat(from: -5, to: 5)
-    let z = randomCGFloat(from: -10, to: 10)
+    let x = randomCGFloat(from: -10, to: 20)
+    let y = randomCGFloat(from: -5, to: 20)
+    let z = randomCGFloat(from: -10, to: 20)
     
     cubeNode.position = SCNVector3(x, y, z)
     
