@@ -37,7 +37,7 @@ struct Screen: View {
                 HStack {
                     Spacer()
                     VStack {
-                        Image(uiImage:ui1).resizable().frame(width: 30, height: 30).clipShape(Circle())
+                        Image(systemName: "figure.walk").resizable().frame(width: 30, height: 30).clipShape(Circle())
                         Rectangle().frame(width: 60, height: 60).foregroundColor(Color(UIColor.systemRed)).cornerRadius(16)
                         Text("App").font(.footnote).padding(.top, 2)
                 
@@ -50,12 +50,16 @@ struct Screen: View {
                     }
                     Spacer()
                     VStack {
+                        Image(systemName: "flower").resizable().frame(width: 30, height: 30).clipShape(Circle()).symbolEffect(.pulse)
+                        Text("App").font(.footnote).padding(.top, 2)
+                        
                         Rectangle().frame(width: 60, height: 60).foregroundColor(Color(UIColor.systemYellow)).cornerRadius(16)
-                        Text("AppY").font(.footnote).padding(.top, 2)
+                        Text("").font(.footnote).padding(.top, 2)
                         
                     }
                     Spacer()
                     VStack {
+                        Image(uiImage:ui1).resizable().frame(width: 30, height: 30).clipShape(Circle())
                         Rectangle().frame(width: 60, height: 60).foregroundColor(Color(UIColor.systemGreen)).cornerRadius(16)
                         Text("App").font(.footnote).padding(.top, 2)
                     }
