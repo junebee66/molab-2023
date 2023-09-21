@@ -10,11 +10,11 @@ let scene = SCNScene()
 // Create a camera and add it to the scene
 let cameraNode = SCNNode()
 cameraNode.camera = SCNCamera()
-cameraNode.position = SCNVector3(x: 0, y: 0, z: 10)
+cameraNode.position = SCNVector3(x: 0, y: -2, z: 10)
 scene.rootNode.addChildNode(cameraNode)
 
 // Create a 3D model (replace 'yourModel.dae' with your model's file name)
-if let modelScene = SCNScene(named: "Duck2.dae") {
+if let modelScene = SCNScene(named: "cottage.dae") {
     for childNode in modelScene.rootNode.childNodes {
         // Ensure that the model's materials are applied correctly
         if let geometry = childNode.geometry {
@@ -22,7 +22,7 @@ if let modelScene = SCNScene(named: "Duck2.dae") {
             let imageMaterial = SCNMaterial()
             
             // Set the material's diffuse contents to an image
-            if let image = UIImage(named: "Leafs.png") {
+            if let image = UIImage(named: "house.png") {
                 imageMaterial.diffuse.contents = image
                 geometry.materials = [imageMaterial] // Assign the material to the geometry
             }
