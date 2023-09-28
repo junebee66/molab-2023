@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A40EF21C2AC562300028BF0D /* shapes.png in Resources */ = {isa = PBXBuildFile; fileRef = A40EF21B2AC562300028BF0D /* shapes.png */; };
+		A40EF21E2AC5626D0028BF0D /* shapes-B.png in Resources */ = {isa = PBXBuildFile; fileRef = A40EF21D2AC5626D0028BF0D /* shapes-B.png */; };
 		A4F84EC62AC5426F00B3D186 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4F84EC52AC5426F00B3D186 /* AppDelegate.swift */; };
 		A4F84EC82AC5426F00B3D186 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4F84EC72AC5426F00B3D186 /* ContentView.swift */; };
 		A4F84ECA2AC5427100B3D186 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A4F84EC92AC5427100B3D186 /* Assets.xcassets */; };
@@ -19,6 +21,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A40EF21B2AC562300028BF0D /* shapes.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = shapes.png; sourceTree = "<group>"; };
+		A40EF21D2AC5626D0028BF0D /* shapes-B.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "shapes-B.png"; sourceTree = "<group>"; };
 		A4F84EC22AC5426F00B3D186 /* arHW01.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = arHW01.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4F84EC52AC5426F00B3D186 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A4F84EC72AC5426F00B3D186 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -62,11 +66,13 @@
 			isa = PBXGroup;
 			children = (
 				A4F84EC52AC5426F00B3D186 /* AppDelegate.swift */,
-				A4F84EC72AC5426F00B3D186 /* ContentView.swift */,
 				A4F84ED92AC55AB900B3D186 /* LeavesTornado.swift */,
+				A4F84EC72AC5426F00B3D186 /* ContentView.swift */,
 				A4F84ED72AC55A6900B3D186 /* SphereFalling.swift */,
 				A4F84EDD2AC55C8C00B3D186 /* PlaceButterfly.swift */,
 				A4F84EDB2AC55B8B00B3D186 /* particle.png */,
+				A40EF21D2AC5626D0028BF0D /* shapes-B.png */,
+				A40EF21B2AC562300028BF0D /* shapes.png */,
 				A4F84EC92AC5427100B3D186 /* Assets.xcassets */,
 				A4F84ED32AC5451600B3D186 /* butterfly.usdz */,
 				A4F84ECB2AC5427100B3D186 /* Preview Content */,
@@ -140,9 +146,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A40EF21C2AC562300028BF0D /* shapes.png in Resources */,
 				A4F84ED42AC5451600B3D186 /* butterfly.usdz in Resources */,
 				A4F84ECD2AC5427100B3D186 /* Preview Assets.xcassets in Resources */,
 				A4F84ECA2AC5427100B3D186 /* Assets.xcassets in Resources */,
+				A40EF21E2AC5626D0028BF0D /* shapes-B.png in Resources */,
 				A4F84EDC2AC55B8B00B3D186 /* particle.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
