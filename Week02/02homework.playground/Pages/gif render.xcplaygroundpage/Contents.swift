@@ -21,6 +21,6 @@ let frames = [frame1, frame2, frame3].compactMap { $0 }
 
 // Set up animation parameters
 animationView.animationImages = frames
-animationView.animationDuration = 2.0 // Adjust the duration as needed
+animationView.animationDuration = 0.5 // Adjust the duration as needed
 animationView.animationRepeatCount = 0 // 0 means repeat indefinitely
 animationView.startAnimating()

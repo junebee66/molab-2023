@@ -25,7 +25,7 @@ func randomColor() -> UIColor {
     )
 }
 
-// Create random cubes instead of spheres
+
 let numCubes = 50
 
 for _ in 1...numCubes {
