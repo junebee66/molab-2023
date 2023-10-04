@@ -63,8 +63,8 @@ struct ParticleEmitterView: UIViewRepresentable {
         cell.scaleRange = 0.001
         cell.scaleSpeed = -0.09
         //can change image to particle/shapes/shapes-B
-        cell.contents = UIImage(named: "particle")?.cgImage
-//        cell.contents = UIImage(named: "shapes-B")?.cgImage
+//        cell.contents = UIImage(named: "particle")?.cgImage
+        cell.contents = UIImage(named: "shapes-B")?.cgImage
 //        cell.contents = UIImage(named: "shapes")?.cgImage
         //can change image to particle/shapes/shapes-B
 
@@ -78,3 +78,4 @@ struct ParticleEmitterView: UIViewRepresentable {
 
     func updateUIView(_ uiView: UIView, context: Context) {}
 }
+
