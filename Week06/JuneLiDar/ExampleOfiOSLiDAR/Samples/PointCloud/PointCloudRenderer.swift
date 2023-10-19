@@ -1,11 +1,3 @@
-//
-//  PointCloudRenderer.swift
-//  JuneLiDAR
-//
-//  Created by June Bee on 10/18/23.
-//
-
-import Foundation
 
 
 import Metal

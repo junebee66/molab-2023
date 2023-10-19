@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:">
+      location = "self:/Users/junebee/Documents/molab-2023/Week06/ExampleOfiOSLiDAR/JuneLiDar.xcodeproj">
    </FileRef>
 </Workspace>
