@@ -23,12 +23,12 @@
 		1EF1911225C607E3005064FC /* MenuItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EF1911125C607E3005064FC /* MenuItemCell.swift */; };
 		1EF5A0D026AA1D6600E49415 /* PointCloudViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EF5A0CE26AA1D6600E49415 /* PointCloudViewController.swift */; };
 		1EF5A0D126AA1D6600E49415 /* PointCloud.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1EF5A0CF26AA1D6600E49415 /* PointCloud.storyboard */; };
-		A4688BD52AE0E22F008F633B /* Collision.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4688BD32AE0E22E008F633B /* Collision.storyboard */; };
-		A4688BD62AE0E22F008F633B /* CollisionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4688BD42AE0E22F008F633B /* CollisionViewController.swift */; };
-		A4688BE12AE0E2E7008F633B /* DepthMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4688BDF2AE0E2E7008F633B /* DepthMapViewController.swift */; };
-		A4688BE52AE16B7C008F633B /* ExportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4688BE32AE16B7C008F633B /* ExportViewController.swift */; };
 		A4688BE72AE17760008F633B /* DepthMap.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4688BE62AE17760008F633B /* DepthMap.storyboard */; };
 		A4688BE92AE1781D008F633B /* Export.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4688BE82AE1781D008F633B /* Export.storyboard */; };
+		A4D0C05D2AE1790900FCFAC8 /* DepthMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4D0C05C2AE1790900FCFAC8 /* DepthMapViewController.swift */; };
+		A4D0C05F2AE1792700FCFAC8 /* ExportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4D0C05E2AE1792700FCFAC8 /* ExportViewController.swift */; };
+		A4D0C0612AE1796900FCFAC8 /* CollisionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4D0C0602AE1796900FCFAC8 /* CollisionViewController.swift */; };
+		A4D0C0632AE1798500FCFAC8 /* Collision.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4D0C0622AE1798500FCFAC8 /* Collision.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,12 +70,12 @@
 		1EF1911125C607E3005064FC /* MenuItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItemCell.swift; sourceTree = "<group>"; };
 		1EF5A0CE26AA1D6600E49415 /* PointCloudViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PointCloudViewController.swift; sourceTree = "<group>"; };
 		1EF5A0CF26AA1D6600E49415 /* PointCloud.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = PointCloud.storyboard; sourceTree = "<group>"; };
-		A4688BD32AE0E22E008F633B /* Collision.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Collision.storyboard; path = "../../../../../Desktop/3_Ios-class/self-ref/ExampleOfiOSLiDAR copy/ExampleOfiOSLiDAR/Samples/Collision/Collision.storyboard"; sourceTree = "<group>"; };
-		A4688BD42AE0E22F008F633B /* CollisionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CollisionViewController.swift; path = "../../../../../Desktop/3_Ios-class/self-ref/ExampleOfiOSLiDAR copy/ExampleOfiOSLiDAR/Samples/Collision/CollisionViewController.swift"; sourceTree = "<group>"; };
-		A4688BDF2AE0E2E7008F633B /* DepthMapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DepthMapViewController.swift; path = "../../../../Desktop/3_Ios-class/ExampleOfiOSLiDAR/ExampleOfiOSLiDAR/Samples/Depth/DepthMapViewController.swift"; sourceTree = "<group>"; };
-		A4688BE32AE16B7C008F633B /* ExportViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ExportViewController.swift; path = "../../../../Desktop/3_Ios-class/self-ref/ExampleOfiOSLiDAR copy/ExampleOfiOSLiDAR/Samples/Export/ExportViewController.swift"; sourceTree = "<group>"; };
 		A4688BE62AE17760008F633B /* DepthMap.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = DepthMap.storyboard; path = ExampleOfiOSLiDAR/Samples/Depth/DepthMap.storyboard; sourceTree = "<group>"; };
 		A4688BE82AE1781D008F633B /* Export.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Export.storyboard; path = ExampleOfiOSLiDAR/Samples/Export/Export.storyboard; sourceTree = "<group>"; };
+		A4D0C05C2AE1790900FCFAC8 /* DepthMapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DepthMapViewController.swift; path = ExampleOfiOSLiDAR/Samples/Depth/DepthMapViewController.swift; sourceTree = "<group>"; };
+		A4D0C05E2AE1792700FCFAC8 /* ExportViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ExportViewController.swift; path = ExampleOfiOSLiDAR/Samples/Export/ExportViewController.swift; sourceTree = "<group>"; };
+		A4D0C0602AE1796900FCFAC8 /* CollisionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CollisionViewController.swift; path = ExampleOfiOSLiDAR/Samples/Collision/CollisionViewController.swift; sourceTree = "<group>"; };
+		A4D0C0622AE1798500FCFAC8 /* Collision.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Collision.storyboard; path = ExampleOfiOSLiDAR/Samples/Collision/Collision.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,10 +118,12 @@
 		1EEE224D25A7039B00706DE8 = {
 			isa = PBXGroup;
 			children = (
-				A4688BDF2AE0E2E7008F633B /* DepthMapViewController.swift */,
 				A4688BE62AE17760008F633B /* DepthMap.storyboard */,
+				A4D0C05C2AE1790900FCFAC8 /* DepthMapViewController.swift */,
+				A4D0C0622AE1798500FCFAC8 /* Collision.storyboard */,
+				A4D0C0602AE1796900FCFAC8 /* CollisionViewController.swift */,
+				A4D0C05E2AE1792700FCFAC8 /* ExportViewController.swift */,
 				A4688BE82AE1781D008F633B /* Export.storyboard */,
-				A4688BE32AE16B7C008F633B /* ExportViewController.swift */,
 				1EEE225825A7039B00706DE8 /* ExampleOfiOSLiDAR */,
 				1EEE225725A7039B00706DE8 /* Products */,
 			);
@@ -141,8 +143,6 @@
 			isa = PBXGroup;
 			children = (
 				1EEE225925A7039B00706DE8 /* AppDelegate.swift */,
-				A4688BD32AE0E22E008F633B /* Collision.storyboard */,
-				A4688BD42AE0E22F008F633B /* CollisionViewController.swift */,
 				1EEE225D25A7039B00706DE8 /* Experience.rcproject */,
 				1EEE225F25A7039B00706DE8 /* Main.storyboard */,
 				1EF1910425C605A5005064FC /* MenuViewController.swift */,
@@ -282,9 +282,9 @@
 				1EEE226325A7039C00706DE8 /* Assets.xcassets in Resources */,
 				1EF5A0D126AA1D6600E49415 /* PointCloud.storyboard in Resources */,
 				1EEE226125A7039B00706DE8 /* Main.storyboard in Resources */,
-				A4688BD52AE0E22F008F633B /* Collision.storyboard in Resources */,
 				A4688BE92AE1781D008F633B /* Export.storyboard in Resources */,
 				A4688BE72AE17760008F633B /* DepthMap.storyboard in Resources */,
+				A4D0C0632AE1798500FCFAC8 /* Collision.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -314,17 +314,17 @@
 				1E9A572626AAA5A80083CFDD /* PointCloudShaders.metal in Sources */,
 				1E12889C25D50CDB00661E0D /* MDLMesh+Ext.swift in Sources */,
 				1EEE225A25A7039B00706DE8 /* AppDelegate.swift in Sources */,
-				A4688BD62AE0E22F008F633B /* CollisionViewController.swift in Sources */,
-				A4688BE52AE16B7C008F633B /* ExportViewController.swift in Sources */,
-				A4688BE12AE0E2E7008F633B /* DepthMapViewController.swift in Sources */,
+				A4D0C05F2AE1792700FCFAC8 /* ExportViewController.swift in Sources */,
 				1EF5A0D026AA1D6600E49415 /* PointCloudViewController.swift in Sources */,
 				1EF1910525C605A5005064FC /* MenuViewController.swift in Sources */,
+				A4D0C05D2AE1790900FCFAC8 /* DepthMapViewController.swift in Sources */,
 				1E9A572226AAA0990083CFDD /* PointCloudRenderer.swift in Sources */,
 				1EF1910A25C605D2005064FC /* MenuDataSource.swift in Sources */,
 				1EF1911225C607E3005064FC /* MenuItemCell.swift in Sources */,
 				1E470F9125AF932000D8D918 /* ARFrame+Ext.swift in Sources */,
 				1EEE225E25A7039B00706DE8 /* Experience.rcproject in Sources */,
 				1E59318A25D48BD2002CCCC9 /* ARMeshGeometry+Ext.swift in Sources */,
+				A4D0C0612AE1796900FCFAC8 /* CollisionViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
