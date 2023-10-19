@@ -32,6 +32,11 @@ class MenuViewModel {
             title: "🍀 Point Cloud",
             description: "Point cloud.",
             prefix: "PointCloud"
+        ),
+        MenuItem (
+            title: "✈️ Export",
+            description: "Export scaned object to .obj file.",
+            prefix: "Export"
         )
     ]
     
