@@ -101,28 +101,14 @@ struct ContentView: View {
     }
 }
 
-class LightingRed: Entity, HasPointLight {
-    required init() {
-        super.init()
-        self.light = PointLightComponent(color: .red, intensity: 100000, attenuationRadius: 20)
-    }
-}
-
-class LightingGreen: Entity, HasPointLight {
-    required init() {
-        super.init()
-        self.light = PointLightComponent(color: .green, intensity: 100000, attenuationRadius: 20)
-    }
-}
-
 struct ARViewContainer: UIViewRepresentable {
     func makeUIView(context: Context) -> ARView {
         let arView = ARView(frame: .zero)
-        let pointLight = LightingRed().light
+        
 
         // Load the "Box" scene from the "Experience" Reality File
         let boxAnchor = try! Experience.loadBox()
-        boxAnchor.components.set(pointLight)
+        
 
         // Add the box anchor to the scene
         arView.scene.anchors.append(boxAnchor)
