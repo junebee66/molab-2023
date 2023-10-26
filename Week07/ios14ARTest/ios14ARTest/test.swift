@@ -15,7 +15,7 @@
 //    @State private var image: UIImage?
 //    @State private var showDownloadButton = false
 //
-//    @State private var boxTexture: UIImage? // Added state for the box texture
+//    @State private var boxTexture: Texture? // Updated to Texture
 //
 //    var body: some View {
 //        ZStack {
@@ -92,7 +92,7 @@
 //                        isLoading = false
 //                        image = uiImage
 //                        showDownloadButton = true
-//                        boxTexture = uiImage // Update the box texture here
+//                        boxTexture = TextureResource.load(uiImage) // Update the box texture here
 //                    }
 //                }
 //            }.resume()
@@ -105,7 +105,7 @@
 //}
 //
 //struct ARViewContainer: UIViewRepresentable {
-//    @Binding var boxTexture: UIImage? // Add a binding for the box texture
+//    @Binding var boxTexture: Texture? // Updated to Texture
 //
 //    func makeUIView(context: Context) -> ARView {
 //        let arView = ARView(frame: .zero)
@@ -118,8 +118,7 @@
 //        // Use the provided box texture
 //        if let texture = boxTexture {
 //            let material = SimpleMaterial(color: .white, isMetallic: false)
-//            let textureResource = TextureResource.load(image: texture)
-//            material.baseColor.texture = textureResource
+//            material.baseColor.texture = texture
 //            boxAnchor.steelBox?.model?.materials[0] = material
 //        }
 //
@@ -129,7 +128,9 @@
 //        return arView
 //    }
 //
-//    func updateUIView(_ uiView: ARView, context: Context) {}
+//    func updateUIView(_ uiView: ARView, context: Context) {
+//        // You can add any additional updates here if needed
+//    }
 //}
 //
 //#if DEBUG
