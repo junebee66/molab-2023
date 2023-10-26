@@ -7,17 +7,17 @@
 //    @AppStorage("username") var username: String = "Anonymous"
 //    @AppStorage("score") var score: Int = 0
 //    @State private var lightColor = false
+//    // AI ART
 //    @State private var promptText = "beautiful landscape"
 //    @State private var heightText = "360"
 //    @State private var widthText = "480"
 //    @State private var isLoading = false
 //    @State private var image: UIImage?
 //    @State private var showDownloadButton = false
-//    @State private var boxMaterialColor: Color = .red // Initial color
 //
 //    var body: some View {
 //        ZStack {
-//            ARViewContainer(boxMaterialColor: $boxMaterialColor).edgesIgnoringSafeArea(.all)
+//            ARViewContainer().edgesIgnoringSafeArea(.all)
 //
 //            VStack {
 //                Text("Image Generator")
@@ -90,7 +90,6 @@
 //                        isLoading = false
 //                        image = uiImage
 //                        showDownloadButton = true
-//                        boxMaterialColor = .green // Change the color to green
 //                    }
 //                }
 //            }.resume()
@@ -102,9 +101,21 @@
 //    }
 //}
 //
-//struct ARViewContainer: UIViewRepresentable {
-//    @Binding var boxMaterialColor: Color
+//class LightingRed: Entity, HasPointLight {
+//    required init() {
+//        super.init()
+//        self.light = PointLightComponent(color: .red, intensity: 100000, attenuationRadius: 20)
+//    }
+//}
 //
+//class LightingGreen: Entity, HasPointLight {
+//    required init() {
+//        super.init()
+//        self.light = PointLightComponent(color: .green, intensity: 100000, attenuationRadius: 20)
+//    }
+//}
+//
+//struct ARViewContainer: UIViewRepresentable {
 //    func makeUIView(context: Context) -> ARView {
 //        let arView = ARView(frame: .zero)
 //        let pointLight = LightingRed().light
@@ -113,12 +124,9 @@
 //        let boxAnchor = try! Experience.loadBox()
 //        boxAnchor.components.set(pointLight)
 //
-//        // Change the box material color based on the binding
-//        let material = SimpleMaterial(color: boxMaterialColor, isMetallic: false)
-//        boxAnchor.steelBox?.model?.materials[0] = material
-//
 //        // Add the box anchor to the scene
 //        arView.scene.anchors.append(boxAnchor)
+//
 //
 //        return arView
 //    }
