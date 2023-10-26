@@ -1,25 +1,23 @@
 import SwiftUI
 import RealityKit
 import ARKit
-//import UIKit
+import UIKit
 
 struct ContentView: View {
     @AppStorage("username") var username: String = "Anonymous"
     @AppStorage("score") var score: Int = 0
     @State private var lightColor = false
+    // AI ART
     @State private var promptText = "beautiful landscape"
     @State private var heightText = "360"
     @State private var widthText = "480"
     @State private var isLoading = false
     @State private var image: UIImage?
     @State private var showDownloadButton = false
-    @State private var boxMaterialColor: Color = .red // Initial color
-    
-    @State private var arBox: Entity?
 
     var body: some View {
         ZStack {
-            ARViewContainer(boxMaterialColor: $boxMaterialColor).edgesIgnoringSafeArea(.all)
+            ARViewContainer().edgesIgnoringSafeArea(.all)
 
             VStack {
                 Text("Image Generator")
@@ -92,7 +90,6 @@ struct ContentView: View {
                         isLoading = false
                         image = uiImage
                         showDownloadButton = true
-                        boxMaterialColor = .green // Change the color to green
                     }
                 }
             }.resume()
@@ -104,41 +101,37 @@ struct ContentView: View {
     }
 }
 
-struct ARViewContainer: UIViewRepresentable {
-    @Binding var boxMaterialColor: Color
-    @Binding var arBox: Entity? // Bind AR box entity
+class LightingRed: Entity, HasPointLight {
+    required init() {
+        super.init()
+        self.light = PointLightComponent(color: .red, intensity: 100000, attenuationRadius: 20)
+    }
+}
 
+class LightingGreen: Entity, HasPointLight {
+    required init() {
+        super.init()
+        self.light = PointLightComponent(color: .green, intensity: 100000, attenuationRadius: 20)
+    }
+}
+
+struct ARViewContainer: UIViewRepresentable {
     func makeUIView(context: Context) -> ARView {
         let arView = ARView(frame: .zero)
+        let pointLight = LightingRed().light
 
         // Load the "Box" scene from the "Experience" Reality File
         let boxAnchor = try! Experience.loadBox()
-        
-        // Set the initial box color
-        setBoxColor(boxAnchor, color: boxMaterialColor)
-
-        // Bind the AR box entity
-        arBox = boxAnchor.steelBox
+        boxAnchor.components.set(pointLight)
 
         // Add the box anchor to the scene
         arView.scene.anchors.append(boxAnchor)
+
         
         return arView
     }
 
-    func updateUIView(_ uiView: ARView, context: Context) {
-        // Update the box color when it changes
-        if let box = arBox, boxMaterialColor != box.color {
-            setBoxColor(box, color: boxMaterialColor)
-        }
-    }
-    
-    func setBoxColor(_ entity: Entity, color: Color) {
-        if let material = entity.model?.materials.first {
-            let uiColor = UIColor(color)
-            material.color = MaterialColorParameter.baseColor(uiColor)
-        }
-    }
+    func updateUIView(_ uiView: ARView, context: Context) {}
 }
 
 #if DEBUG
