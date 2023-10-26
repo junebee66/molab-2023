@@ -7,17 +7,19 @@
 //    @AppStorage("username") var username: String = "Anonymous"
 //    @AppStorage("score") var score: Int = 0
 //    @State private var lightColor = false
+//    // AI ART
 //    @State private var promptText = "beautiful landscape"
 //    @State private var heightText = "360"
 //    @State private var widthText = "480"
 //    @State private var isLoading = false
 //    @State private var image: UIImage?
 //    @State private var showDownloadButton = false
-//    @State private var boxMaterialColor: Color = .red // Initial color
+//
+//    @State private var boxTexture: UIImage? // Added state for the box texture
 //
 //    var body: some View {
 //        ZStack {
-//            ARViewContainer(boxMaterialColor: $boxMaterialColor).edgesIgnoringSafeArea(.all)
+//            ARViewContainer(boxTexture: $boxTexture).edgesIgnoringSafeArea(.all) // Pass the binding
 //
 //            VStack {
 //                Text("Image Generator")
@@ -90,7 +92,7 @@
 //                        isLoading = false
 //                        image = uiImage
 //                        showDownloadButton = true
-//                        boxMaterialColor = .green // Change the color to green
+//                        boxTexture = uiImage // Update the box texture here
 //                    }
 //                }
 //            }.resume()
@@ -103,7 +105,7 @@
 //}
 //
 //struct ARViewContainer: UIViewRepresentable {
-//    @Binding var boxMaterialColor: Color
+//    @Binding var boxTexture: UIImage? // Add a binding for the box texture
 //
 //    func makeUIView(context: Context) -> ARView {
 //        let arView = ARView(frame: .zero)
@@ -113,9 +115,13 @@
 //        let boxAnchor = try! Experience.loadBox()
 //        boxAnchor.components.set(pointLight)
 //
-//        // Change the box material color based on the binding
-//        let material = SimpleMaterial(color: boxMaterialColor, isMetallic: false)
-//        boxAnchor.steelBox?.model?.materials[0] = material
+//        // Use the provided box texture
+//        if let texture = boxTexture {
+//            let material = SimpleMaterial(color: .white, isMetallic: false)
+//            let textureResource = TextureResource.load(image: texture)
+//            material.baseColor.texture = textureResource
+//            boxAnchor.steelBox?.model?.materials[0] = material
+//        }
 //
 //        // Add the box anchor to the scene
 //        arView.scene.anchors.append(boxAnchor)
