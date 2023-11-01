@@ -75,15 +75,15 @@ struct ARKitSceneView: View {
         isLoading = true
         showDownloadButton = false
         image = nil
-
+        
         let description = promptText.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed) ?? "beautiful%20landscape"
         let randomSeed = Int.random(in: 0..<1000000000)
         let heightA = Int(heightText) ?? 360
         let widthA = Int(widthText) ?? 480
-
+        
         let imageUrl = "https://image.pollinations.ai/prompt/\(description)?nologo=1&seed=\(randomSeed)&height=\(heightA)&width=\(widthA)"
         print("URL: \(imageUrl)")
-
+        
         if let url = URL(string: imageUrl) {
             URLSession.shared.dataTask(with: url) { data, _, _ in
                 if let data = data, let uiImage = UIImage(data: data) {
@@ -91,14 +91,31 @@ struct ARKitSceneView: View {
                         isLoading = false
                         image = uiImage
                         showDownloadButton = true
-                        // Update the currentTexture to the generated image
-                        currentTexture = "generatedImage.jpg" // Change to an appropriate filename
+                        
+                        // Convert UIImage to Data as a JPEG image
+                        if let imageData = uiImage.jpegData(compressionQuality: 1.0) {
+                            // Define a filename for the generated image (e.g., "generatedImage.jpg")
+                            let filename = "generatedImage.jpg"
+                            
+                            // Save the generated image to the app's Documents directory
+                            if let documentsDirectory = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first {
+                                let fileURL = documentsDirectory.appendingPathComponent(filename)
+                                
+                                do {
+                                    try imageData.write(to: fileURL)
+                                    currentTexture = filename // Update currentTexture with the filename
+                                } catch {
+                                    print("Error saving image: \(error)")
+                                }
+                            }
+                        }
                     }
                 }
             }.resume()
         }
     }
-
+        
+        
     func downloadImage() {
         // Implement the download functionality here, e.g., using UIActivityViewController or other methods.
     }
