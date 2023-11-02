@@ -7,29 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A48BF98A2AF2FAE100FBDC37 /* mars.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A48BF9892AF2FAE100FBDC37 /* mars.jpg */; };
 		A48BF98C2AF2FDB600FBDC37 /* flower.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A48BF98B2AF2FDB600FBDC37 /* flower.jpg */; };
+		A48BF98E2AF34C5900FBDC37 /* galaxy.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A48BF98D2AF34C5900FBDC37 /* galaxy.jpg */; };
+		A48BF9902AF3555F00FBDC37 /* DepthMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = A48BF98F2AF3555F00FBDC37 /* DepthMap.swift */; };
 		A49C804D2ACE03AB00CEDF4E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A49C804C2ACE03AB00CEDF4E /* AppDelegate.swift */; };
 		A49C804F2ACE03AB00CEDF4E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A49C804E2ACE03AB00CEDF4E /* ContentView.swift */; };
 		A49C80512ACE03AB00CEDF4E /* Experience.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = A49C80502ACE03AB00CEDF4E /* Experience.rcproject */; };
 		A49C80532ACE03AD00CEDF4E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A49C80522ACE03AD00CEDF4E /* Assets.xcassets */; };
 		A49C80562ACE03AD00CEDF4E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A49C80552ACE03AD00CEDF4E /* Preview Assets.xcassets */; };
-		A4C97ACF2AE79252009E4AB7 /* original.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4C97ACE2AE79252009E4AB7 /* original.swift */; };
-		A4C97AED2AEA94CC009E4AB7 /* test.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4C97AEC2AEA94CC009E4AB7 /* test.swift */; };
 		A4C97AEF2AEAAF8F009E4AB7 /* test-img.png in Resources */ = {isa = PBXBuildFile; fileRef = A4C97AEE2AEAAF8E009E4AB7 /* test-img.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		A48BF9892AF2FAE100FBDC37 /* mars.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = mars.jpg; path = ../../../../../Desktop/mars.jpg; sourceTree = "<group>"; };
 		A48BF98B2AF2FDB600FBDC37 /* flower.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = flower.jpg; path = ../../../../../Desktop/flower.jpg; sourceTree = "<group>"; };
+		A48BF98D2AF34C5900FBDC37 /* galaxy.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = galaxy.jpg; path = "../../../../Desktop Wallpaper/galaxy.jpg"; sourceTree = "<group>"; };
+		A48BF98F2AF3555F00FBDC37 /* DepthMap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DepthMap.swift; sourceTree = "<group>"; };
 		A49C80492ACE03AB00CEDF4E /* ios14ARTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ios14ARTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A49C804C2ACE03AB00CEDF4E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A49C804E2ACE03AB00CEDF4E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		A49C80502ACE03AB00CEDF4E /* Experience.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; path = Experience.rcproject; sourceTree = "<group>"; };
 		A49C80522ACE03AD00CEDF4E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A49C80552ACE03AD00CEDF4E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		A4C97ACE2AE79252009E4AB7 /* original.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = original.swift; sourceTree = "<group>"; };
-		A4C97AEC2AEA94CC009E4AB7 /* test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = test.swift; sourceTree = "<group>"; };
 		A4C97AEE2AEAAF8E009E4AB7 /* test-img.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "test-img.png"; path = "../../../../../Desktop/test-img.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -64,15 +62,14 @@
 			isa = PBXGroup;
 			children = (
 				A49C804C2ACE03AB00CEDF4E /* AppDelegate.swift */,
-				A4C97ACE2AE79252009E4AB7 /* original.swift */,
 				A49C804E2ACE03AB00CEDF4E /* ContentView.swift */,
 				A49C80502ACE03AB00CEDF4E /* Experience.rcproject */,
 				A49C80522ACE03AD00CEDF4E /* Assets.xcassets */,
-				A48BF9892AF2FAE100FBDC37 /* mars.jpg */,
 				A49C80542ACE03AD00CEDF4E /* Preview Content */,
-				A4C97AEC2AEA94CC009E4AB7 /* test.swift */,
 				A4C97AEE2AEAAF8E009E4AB7 /* test-img.png */,
 				A48BF98B2AF2FDB600FBDC37 /* flower.jpg */,
+				A48BF98D2AF34C5900FBDC37 /* galaxy.jpg */,
+				A48BF98F2AF3555F00FBDC37 /* DepthMap.swift */,
 			);
 			path = ios14ARTest;
 			sourceTree = "<group>";
@@ -145,8 +142,8 @@
 			files = (
 				A49C80562ACE03AD00CEDF4E /* Preview Assets.xcassets in Resources */,
 				A4C97AEF2AEAAF8F009E4AB7 /* test-img.png in Resources */,
-				A48BF98A2AF2FAE100FBDC37 /* mars.jpg in Resources */,
 				A48BF98C2AF2FDB600FBDC37 /* flower.jpg in Resources */,
+				A48BF98E2AF34C5900FBDC37 /* galaxy.jpg in Resources */,
 				A49C80532ACE03AD00CEDF4E /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -158,10 +155,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A4C97ACF2AE79252009E4AB7 /* original.swift in Sources */,
+				A48BF9902AF3555F00FBDC37 /* DepthMap.swift in Sources */,
 				A49C804F2ACE03AB00CEDF4E /* ContentView.swift in Sources */,
 				A49C804D2ACE03AB00CEDF4E /* AppDelegate.swift in Sources */,
-				A4C97AED2AEA94CC009E4AB7 /* test.swift in Sources */,
 				A49C80512ACE03AB00CEDF4E /* Experience.rcproject in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
