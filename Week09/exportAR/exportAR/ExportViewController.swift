@@ -1,5 +1,9 @@
 
 
+
+// the ExportViewController should be strctured like PHPPickerviewController in the PhotoPickerBlender file
+// ExportViewController = PHPPickerviewController
+
 import RealityKit
 import ARKit
 
