@@ -19,6 +19,8 @@ class ExportViewController: UIViewController, ARSessionDelegate {
     }()
 
     override func viewDidLoad() {
+        print("ExportViewController arView", arView ?? "-none-")
+        print("ExportViewController hidden", arView.isHidden)
         func setARViewOptions() {
             arView.debugOptions.insert(.showSceneUnderstanding)
         }

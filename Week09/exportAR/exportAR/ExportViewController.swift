@@ -9,8 +9,9 @@ import ARKit
 
 class ExportViewController: UIViewController, ARSessionDelegate {
     
-    @IBOutlet var arView: ARView!
-    
+//    @IBOutlet var arView: ARView!
+    var arView: ARView!
+
     var orientation: UIInterfaceOrientation {
         guard let orientation = UIApplication.shared.windows.first?.windowScene?.interfaceOrientation else {
             fatalError()
@@ -23,6 +24,8 @@ class ExportViewController: UIViewController, ARSessionDelegate {
     }()
 
     override func viewDidLoad() {
+        print("ExportViewController viewDidLoad arView", arView ?? "-none-")
+        print("ExportViewController hidden", arView.isHidden)
         func setARViewOptions() {
             arView.debugOptions.insert(.showSceneUnderstanding)
         }
@@ -45,7 +48,6 @@ class ExportViewController: UIViewController, ARSessionDelegate {
         arView.session.delegate = self
         super.viewDidLoad()
         initARView()
-        print("called ar View")
     }
 
     @IBAction func tappedExportButton(_ sender: UIButton) {

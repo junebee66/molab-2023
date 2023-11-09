@@ -16,28 +16,36 @@ struct ContentView : View {
     }
 }
 
-struct ARViewContainer: UIViewRepresentable {
-    let exportView = ExportViewController()
+struct ARViewContainer: UIViewControllerRepresentable {
     
-    func makeUIView(context: Context) -> ARView {
-        
-        let arView = ARView(frame: .zero)
-        exportView.arView = arView
-        
+    func makeUIViewController(context: Context) -> some UIViewController {
+//    func makeUIView(context: Context) -> ARView {
 
-//
+        print("ARViewContainer makeUIViewController");
+
+        let exportVC = ExportViewController()
+//        let size = sizeThatFits(.unspecified, uiViewController: exportVC, context: context)
+        let arView = ARView(frame: CGRect(x: 0, y: 48, width: 414, height: 814))
+        exportVC.arView = arView
+
 //        // Load the "Box" scene from the "Experience" Reality File
 //        let boxAnchor = try! Experience.loadBox()
 //
 //        // Add the box anchor to the scene
 //        arView.scene.anchors.append(boxAnchor)
-//
-        return arView
+
+        print("ARViewContainer makeUIViewController exportVC", exportVC);
+        
+        return exportVC
         
     }
     
-    func updateUIView(_ uiView: ARView, context: Context) {}
+//    func updateUIView(_ uiView: ARView, context: Context) {}
     
+    func updateUIViewController(_ uiViewController: UIViewControllerType, context: Context) {
+//        print("ARViewContainer updateUIViewController context", context);
+        print("ARViewContainer updateUIViewController uiViewController", uiViewController);
+    }
 }
 
 //#if DEBUG
