@@ -55,7 +55,8 @@ struct ARViewContainer_View: UIViewRepresentable {
             let configuration = buildConfigure()
             arView.session.run(configuration)
         }
-        
+
+        // If delegate is require we would need to use makeCoordinator
 //        arView.session.delegate = self
 //        super.viewDidLoad()
         
