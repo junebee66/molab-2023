@@ -40,7 +40,8 @@ class ExportViewController: UIViewController, ARSessionDelegate {
             let configuration = buildConfigure()
             arView.session.run(configuration)
         }
-        arView.session.delegate = self
+// !!@ delegate not used
+//        arView.session.delegate = self
         super.viewDidLoad()
         initARView()
     }
