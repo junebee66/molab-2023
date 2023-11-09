@@ -5,6 +5,8 @@
 //  Created by June Bee on 11/9/23.
 //
 
+//week06 "JuneLiDar" is the working export code and it is a refernce of file "ExportViewController.swift" in this app
+//we are using "07-PhotoPickerBlender" example code to work around "UIViewConterollerRepresentable"
 import SwiftUI
 import RealityKit
 
