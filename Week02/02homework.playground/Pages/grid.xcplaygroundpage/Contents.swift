@@ -38,6 +38,7 @@ struct Screen: View {
                     Spacer()
                     VStack {
                         Image(systemName: "figure.walk").resizable().frame(width: 30, height: 30).clipShape(Circle())
+                        Image("frame1.png").resizable().frame(width: 130, height: 130).clipShape(Circle())
                         Rectangle().frame(width: 60, height: 60).foregroundColor(Color(UIColor.systemRed)).cornerRadius(16)
                         Text("App").font(.footnote).padding(.top, 2)
                 

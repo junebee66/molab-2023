@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A48BF98C2AF2FDB600FBDC37 /* flower.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A48BF98B2AF2FDB600FBDC37 /* flower.jpg */; };
 		A48BF98E2AF34C5900FBDC37 /* galaxy.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A48BF98D2AF34C5900FBDC37 /* galaxy.jpg */; };
 		A48BF9902AF3555F00FBDC37 /* DepthMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = A48BF98F2AF3555F00FBDC37 /* DepthMap.swift */; };
 		A49C804D2ACE03AB00CEDF4E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A49C804C2ACE03AB00CEDF4E /* AppDelegate.swift */; };
@@ -19,7 +18,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		A48BF98B2AF2FDB600FBDC37 /* flower.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = flower.jpg; path = ../../../../../Desktop/flower.jpg; sourceTree = "<group>"; };
 		A48BF98D2AF34C5900FBDC37 /* galaxy.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = galaxy.jpg; path = "../../../../Desktop Wallpaper/galaxy.jpg"; sourceTree = "<group>"; };
 		A48BF98F2AF3555F00FBDC37 /* DepthMap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DepthMap.swift; sourceTree = "<group>"; };
 		A49C80492ACE03AB00CEDF4E /* ios14ARTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ios14ARTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -67,7 +65,6 @@
 				A49C80522ACE03AD00CEDF4E /* Assets.xcassets */,
 				A49C80542ACE03AD00CEDF4E /* Preview Content */,
 				A4C97AEE2AEAAF8E009E4AB7 /* test-img.png */,
-				A48BF98B2AF2FDB600FBDC37 /* flower.jpg */,
 				A48BF98D2AF34C5900FBDC37 /* galaxy.jpg */,
 				A48BF98F2AF3555F00FBDC37 /* DepthMap.swift */,
 			);
@@ -142,7 +139,6 @@
 			files = (
 				A49C80562ACE03AD00CEDF4E /* Preview Assets.xcassets in Resources */,
 				A4C97AEF2AEAAF8F009E4AB7 /* test-img.png in Resources */,
-				A48BF98C2AF2FDB600FBDC37 /* flower.jpg in Resources */,
 				A48BF98E2AF34C5900FBDC37 /* galaxy.jpg in Resources */,
 				A49C80532ACE03AD00CEDF4E /* Assets.xcassets in Resources */,
 			);
