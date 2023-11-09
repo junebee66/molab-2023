@@ -32,7 +32,7 @@ struct MainView: View {
                     Label("Photos", systemImage: "photo.on.rectangle")
                 }
                 .tag(TabTag.photos)
-            CameraView()
+            ExportView()
                 .tabItem {
                     Label("Camera", systemImage: "camera.fill")
                 }
