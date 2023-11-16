@@ -14,7 +14,6 @@
 		A49C80512ACE03AB00CEDF4E /* Experience.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = A49C80502ACE03AB00CEDF4E /* Experience.rcproject */; };
 		A49C80532ACE03AD00CEDF4E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A49C80522ACE03AD00CEDF4E /* Assets.xcassets */; };
 		A49C80562ACE03AD00CEDF4E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A49C80552ACE03AD00CEDF4E /* Preview Assets.xcassets */; };
-		A4C97AEF2AEAAF8F009E4AB7 /* test-img.png in Resources */ = {isa = PBXBuildFile; fileRef = A4C97AEE2AEAAF8E009E4AB7 /* test-img.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,7 +25,6 @@
 		A49C80502ACE03AB00CEDF4E /* Experience.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; path = Experience.rcproject; sourceTree = "<group>"; };
 		A49C80522ACE03AD00CEDF4E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A49C80552ACE03AD00CEDF4E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		A4C97AEE2AEAAF8E009E4AB7 /* test-img.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "test-img.png"; path = "../../../../../Desktop/test-img.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,7 +62,6 @@
 				A49C80502ACE03AB00CEDF4E /* Experience.rcproject */,
 				A49C80522ACE03AD00CEDF4E /* Assets.xcassets */,
 				A49C80542ACE03AD00CEDF4E /* Preview Content */,
-				A4C97AEE2AEAAF8E009E4AB7 /* test-img.png */,
 				A48BF98D2AF34C5900FBDC37 /* galaxy.jpg */,
 				A48BF98F2AF3555F00FBDC37 /* DepthMap.swift */,
 			);
@@ -138,7 +135,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				A49C80562ACE03AD00CEDF4E /* Preview Assets.xcassets in Resources */,
-				A4C97AEF2AEAAF8F009E4AB7 /* test-img.png in Resources */,
 				A48BF98E2AF34C5900FBDC37 /* galaxy.jpg in Resources */,
 				A49C80532ACE03AD00CEDF4E /* Assets.xcassets in Resources */,
 			);

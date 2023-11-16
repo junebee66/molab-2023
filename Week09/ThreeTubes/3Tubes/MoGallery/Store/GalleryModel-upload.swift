@@ -82,8 +82,8 @@ extension GalleryModel {
             // print("fetchDownloadURL download url:\n \(downloadURL) ")
             
             var values: [String: Any] = [:];
-            values["mediaPath"] = downloadURL.description;
-            values["storagePath"] = storagePath;
+            values["mediaPath"] = downloadURL.description; // http: path to download
+            values["storagePath"] = storagePath; //short path for showing -> request data and use it internally
             
             if let fullRezData {
                 self.putFullRezData(metadata: metadata,
