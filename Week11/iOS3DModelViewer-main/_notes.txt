@@ -1,0 +1,138 @@
+_repos/iOS3DModelViewer/_notes.txt
+
+# --
+2023-11-16 22:57:27
+
+https://developer.apple.com/documentation/scenekit/sceneview
+
+https://www.hackingwithswift.com/quick-start/swiftui/how-to-integrate-spritekit-using-spriteview
+
+https://www.hackingwithswift.com/forums/swiftui/scenekit-view-inside-swiftui-project/1644
+
+https://www.hackingwithswift.com/forums/swiftui/how-to-set-defaultcameracontroller/12172
+
+struct ScenekitView : UIViewRepresentable {
+    func makeUIView(context: Context) -> SCNView {
+        let scnView = SCNView()
+        scnView.scene = SCNScene(named:"LowPoly.usdz")
+        scnView.allowsCameraControl = true
+        scnView.autoenablesDefaultLighting = true
+        scnView.defaultCameraController.maximumVerticalAngle = 0.001
+        return scnView
+    }
+
+    func updateUIView(_ scnView: SCNView, context: Context) {
+    }
+}
+
+struct ExcerciseDetail: View {
+
+    var body: some View {
+        VStack {
+            ScenekitView()
+                .frame(width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height / 2)
+        }
+    }
+}
+
+https://stackoverflow.com/questions/62392363/swiftui-hittest-on-scenekit/74708877#74708877
+
+struct ScenekitView : UIViewRepresentable {
+    let scenekitClass = ScenekitClass()
+
+    func makeUIView(context: Context) -> SCNView {
+        return scenekitClass.view
+    }
+
+    func updateUIView(_ scnView: SCNView, context: Context) {
+        // your update UI view contents look like they can all be done in the initial creation
+    }
+}
+
+class ScenekitClass {
+    let view = SCNView()
+    let scene = SCNScene(named: "ship.scn")!
+    
+    init() {
+        // create and add a camera to the scene
+        let cameraNode = SCNNode()
+        cameraNode.camera = SCNCamera()
+        scene.rootNode.addChildNode(cameraNode)
+
+        // place the camera
+        cameraNode.position = SCNVector3(x: 0, y: 0, z: 15)
+        
+        // attach the scene
+        view.scene = scene
+
+        // allows the user to manipulate the camera
+        view.allowsCameraControl = true
+
+        // show statistics such as fps and timing information
+        view.showsStatistics = true
+
+        // configure the view
+        view.backgroundColor = UIColor.black
+
+        // add a tap gesture recognizer
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(handleTap(_:)))
+        view.addGestureRecognizer(tapGesture)
+    }
+    
+    @objc func handleTap(_ gestureRecognize: UIGestureRecognizer) {
+        // check what nodes are tapped
+        let p = gestureRecognize.location(in: view)
+        let hitResults = view.hitTest(p, options: [:])
+        // check that we clicked on at least one object
+        if hitResults.count > 0 {
+            // retrieved the first clicked object
+            let result = hitResults[0]
+
+            // get material for selected geometry element
+            let material = result.node.geometry!.firstMaterial
+            
+            // highlight it
+            SCNTransaction.begin()
+            SCNTransaction.animationDuration = 0.5
+
+            // on completion - unhighlight
+            SCNTransaction.completionBlock = {
+                SCNTransaction.begin()
+                SCNTransaction.animationDuration = 0.5
+
+                material?.emission.contents = UIColor.black
+
+                SCNTransaction.commit()
+            }
+
+            material?.emission.contents = UIColor.green
+
+            SCNTransaction.commit()
+        }
+    }
+}
+
+https://github.com/Thunor/HitTestApp
+SwiftUI & Scenekit hit testing example.
+
+
+
+# --
+2023-11-16 17:11:42
+
+>> Preview fails
+
+>> Warnings on run in simulator
+Info.plist configuration "Default Configuration" for UIWindowSceneSessionRoleApplication contained UISceneDelegateClassName key, but could not load class with name "_DModelViewer.SceneDelegate".
+Info.plist configuration "(no name)" for UIWindowSceneSessionRoleApplication contained UISceneDelegateClassName key, but could not load class with name "_DModelViewer.SceneDelegate".
+Info.plist configuration "(no name)" for UIWindowSceneSessionRoleApplication contained UISceneDelegateClassName key, but could not load class with name "_DModelViewer.SceneDelegate".
+
+>> Try Info.plist from FaceMesh
+++ Get rid Warnings above
+
+>> Plan: Rebuild Using FaceMesh
+
+>> Name model main
+
+D3ModelViewer
+
