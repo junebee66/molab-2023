@@ -11,9 +11,6 @@
 		57047B31269DFD6100DBDE5A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57047B30269DFD6100DBDE5A /* ContentView.swift */; };
 		57047B35269DFD6200DBDE5A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 57047B34269DFD6200DBDE5A /* Assets.xcassets */; };
 		57047B38269DFD6200DBDE5A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 57047B37269DFD6200DBDE5A /* Preview Assets.xcassets */; };
-		57047B3B269DFD6200DBDE5A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57047B39269DFD6200DBDE5A /* LaunchScreen.storyboard */; };
-		57047B46269DFD6300DBDE5A /* ModelPickerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57047B45269DFD6300DBDE5A /* ModelPickerTests.swift */; };
-		57047B51269DFD6300DBDE5A /* ModelPickerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57047B50269DFD6300DBDE5A /* ModelPickerUITests.swift */; };
 		57047B63269E007100DBDE5A /* teapot.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 57047B5F269E007000DBDE5A /* teapot.usdz */; };
 		57047B64269E007100DBDE5A /* toy_biplane.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 57047B60269E007000DBDE5A /* toy_biplane.usdz */; };
 		57047B65269E007100DBDE5A /* fender_stratocaster.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 57047B61269E007000DBDE5A /* fender_stratocaster.usdz */; };
@@ -45,14 +42,9 @@
 		57047B30269DFD6100DBDE5A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		57047B34269DFD6200DBDE5A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		57047B37269DFD6200DBDE5A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		57047B3A269DFD6200DBDE5A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		57047B3C269DFD6200DBDE5A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		57047B41269DFD6300DBDE5A /* ModelPickerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ModelPickerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		57047B45269DFD6300DBDE5A /* ModelPickerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelPickerTests.swift; sourceTree = "<group>"; };
-		57047B47269DFD6300DBDE5A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		57047B4C269DFD6300DBDE5A /* ModelPickerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ModelPickerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		57047B50269DFD6300DBDE5A /* ModelPickerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelPickerUITests.swift; sourceTree = "<group>"; };
-		57047B52269DFD6300DBDE5A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		57047B5F269E007000DBDE5A /* teapot.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = teapot.usdz; sourceTree = "<group>"; };
 		57047B60269E007000DBDE5A /* toy_biplane.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = toy_biplane.usdz; sourceTree = "<group>"; };
 		57047B61269E007000DBDE5A /* fender_stratocaster.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = fender_stratocaster.usdz; sourceTree = "<group>"; };
@@ -90,8 +82,6 @@
 			isa = PBXGroup;
 			children = (
 				57047B2D269DFD6100DBDE5A /* ModelPicker */,
-				57047B44269DFD6300DBDE5A /* ModelPickerTests */,
-				57047B4F269DFD6300DBDE5A /* ModelPickerUITests */,
 				57047B2C269DFD6100DBDE5A /* Products */,
 			);
 			sourceTree = "<group>";
@@ -114,7 +104,6 @@
 				57047B67269EB3E500DBDE5A /* Model.swift */,
 				57047B5E269DFFF200DBDE5A /* Models */,
 				57047B34269DFD6200DBDE5A /* Assets.xcassets */,
-				57047B39269DFD6200DBDE5A /* LaunchScreen.storyboard */,
 				57047B3C269DFD6200DBDE5A /* Info.plist */,
 				57047B36269DFD6200DBDE5A /* Preview Content */,
 			);
@@ -127,24 +116,6 @@
 				57047B37269DFD6200DBDE5A /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
-			sourceTree = "<group>";
-		};
-		57047B44269DFD6300DBDE5A /* ModelPickerTests */ = {
-			isa = PBXGroup;
-			children = (
-				57047B45269DFD6300DBDE5A /* ModelPickerTests.swift */,
-				57047B47269DFD6300DBDE5A /* Info.plist */,
-			);
-			path = ModelPickerTests;
-			sourceTree = "<group>";
-		};
-		57047B4F269DFD6300DBDE5A /* ModelPickerUITests */ = {
-			isa = PBXGroup;
-			children = (
-				57047B50269DFD6300DBDE5A /* ModelPickerUITests.swift */,
-				57047B52269DFD6300DBDE5A /* Info.plist */,
-			);
-			path = ModelPickerUITests;
 			sourceTree = "<group>";
 		};
 		57047B5E269DFFF200DBDE5A /* Models */ = {
@@ -270,7 +241,6 @@
 				57047B63269E007100DBDE5A /* teapot.usdz in Resources */,
 				57047B64269E007100DBDE5A /* toy_biplane.usdz in Resources */,
 				57047B65269E007100DBDE5A /* fender_stratocaster.usdz in Resources */,
-				57047B3B269DFD6200DBDE5A /* LaunchScreen.storyboard in Resources */,
 				57047B38269DFD6200DBDE5A /* Preview Assets.xcassets in Resources */,
 				57047B35269DFD6200DBDE5A /* Assets.xcassets in Resources */,
 				57047B66269E007100DBDE5A /* toy_robot_vintage.usdz in Resources */,
@@ -308,7 +278,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				57047B46269DFD6300DBDE5A /* ModelPickerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -316,7 +285,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				57047B51269DFD6300DBDE5A /* ModelPickerUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -334,17 +302,6 @@
 			targetProxy = 57047B4D269DFD6300DBDE5A /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		57047B39269DFD6200DBDE5A /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				57047B3A269DFD6200DBDE5A /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		57047B53269DFD6300DBDE5A /* Debug */ = {

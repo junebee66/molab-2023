@@ -80,7 +80,7 @@ struct ModelView: UIViewRepresentable {
 //}
 
 
-struct ContentView_Previews: PreviewProvider {
+struct ModelView_Previews: PreviewProvider {
     static var previews: some View {
         ModelView()
     }

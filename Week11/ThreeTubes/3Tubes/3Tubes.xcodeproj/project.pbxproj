@@ -7,6 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A4066E7C2B1FD28000086491 /* SmartHitTest in Frameworks */ = {isa = PBXBuildFile; productRef = A4066E7B2B1FD28000086491 /* SmartHitTest */; };
+		A4066E7F2B1FD35900086491 /* FocusNode in Frameworks */ = {isa = PBXBuildFile; productRef = A4066E7E2B1FD35900086491 /* FocusNode */; };
+		A416A4D52B2115DA0037F5E3 /* ThreeMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = A416A4D42B2115DA0037F5E3 /* ThreeMap.swift */; };
+		A416A4D72B2115FB0037F5E3 /* MapThreeDView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A416A4D62B2115FB0037F5E3 /* MapThreeDView.swift */; };
+		A416A4D92B21160D0037F5E3 /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A416A4D82B21160D0037F5E3 /* CircleImage.swift */; };
+		A416A4DB2B21161B0037F5E3 /* ThreeMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A416A4DA2B21161B0037F5E3 /* ThreeMapView.swift */; };
+		A41B04752B1861C900C8CEA5 /* ModelPlace.swift in Sources */ = {isa = PBXBuildFile; fileRef = A41B04742B1861C900C8CEA5 /* ModelPlace.swift */; };
+		A41B04772B1861E500C8CEA5 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = A41B04762B1861E500C8CEA5 /* Model.swift */; };
+		A41B047C2B18620D00C8CEA5 /* toy_biplane.usdz in Resources */ = {isa = PBXBuildFile; fileRef = A41B04782B18620D00C8CEA5 /* toy_biplane.usdz */; };
+		A41B047D2B18620D00C8CEA5 /* fender_stratocaster.usdz in Resources */ = {isa = PBXBuildFile; fileRef = A41B04792B18620D00C8CEA5 /* fender_stratocaster.usdz */; };
+		A41B047E2B18620D00C8CEA5 /* teapot.usdz in Resources */ = {isa = PBXBuildFile; fileRef = A41B047A2B18620D00C8CEA5 /* teapot.usdz */; };
+		A41B047F2B18620D00C8CEA5 /* toy_robot_vintage.usdz in Resources */ = {isa = PBXBuildFile; fileRef = A41B047B2B18620D00C8CEA5 /* toy_robot_vintage.usdz */; };
+		A41B04832B18630900C8CEA5 /* FocusEntity in Frameworks */ = {isa = PBXBuildFile; productRef = A41B04822B18630900C8CEA5 /* FocusEntity */; };
 		A4555AB02B18566300BB8AC7 /* ModelViewer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4555AAF2B18566200BB8AC7 /* ModelViewer.swift */; };
 		A4555AB52B18570600BB8AC7 /* air_jordan_1_retro_high_tie_dye.usdz in Resources */ = {isa = PBXBuildFile; fileRef = A4555AB32B18570600BB8AC7 /* air_jordan_1_retro_high_tie_dye.usdz */; };
 		A4555AB62B18570600BB8AC7 /* white-env.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A4555AB42B18570600BB8AC7 /* white-env.jpg */; };
@@ -80,6 +93,16 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A416A4D42B2115DA0037F5E3 /* ThreeMap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreeMap.swift; sourceTree = "<group>"; };
+		A416A4D62B2115FB0037F5E3 /* MapThreeDView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapThreeDView.swift; sourceTree = "<group>"; };
+		A416A4D82B21160D0037F5E3 /* CircleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImage.swift; sourceTree = "<group>"; };
+		A416A4DA2B21161B0037F5E3 /* ThreeMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreeMapView.swift; sourceTree = "<group>"; };
+		A41B04742B1861C900C8CEA5 /* ModelPlace.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelPlace.swift; sourceTree = "<group>"; };
+		A41B04762B1861E500C8CEA5 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		A41B04782B18620D00C8CEA5 /* toy_biplane.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = toy_biplane.usdz; sourceTree = "<group>"; };
+		A41B04792B18620D00C8CEA5 /* fender_stratocaster.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = fender_stratocaster.usdz; sourceTree = "<group>"; };
+		A41B047A2B18620D00C8CEA5 /* teapot.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = teapot.usdz; sourceTree = "<group>"; };
+		A41B047B2B18620D00C8CEA5 /* toy_robot_vintage.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = toy_robot_vintage.usdz; sourceTree = "<group>"; };
 		A4555AAF2B18566200BB8AC7 /* ModelViewer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelViewer.swift; sourceTree = "<group>"; };
 		A4555AB32B18570600BB8AC7 /* air_jordan_1_retro_high_tie_dye.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = air_jordan_1_retro_high_tie_dye.usdz; sourceTree = "<group>"; };
 		A4555AB42B18570600BB8AC7 /* white-env.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "white-env.jpg"; sourceTree = "<group>"; };
@@ -153,7 +176,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A41B04832B18630900C8CEA5 /* FocusEntity in Frameworks */,
 				AB07BC4429C0D8080079C149 /* YouTubePlayerKit in Frameworks */,
+				A4066E7C2B1FD28000086491 /* SmartHitTest in Frameworks */,
+				A4066E7F2B1FD35900086491 /* FocusNode in Frameworks */,
 				AB4A7E832954E089005E55CB /* GoogleSignIn in Frameworks */,
 				AB4A7E7E2954E050005E55CB /* FirebaseDatabaseSwift in Frameworks */,
 				AB4A7E802954E050005E55CB /* FirebaseStorage in Frameworks */,
@@ -166,6 +192,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A416A4D32B2115C10037F5E3 /* ThreeDMap */ = {
+			isa = PBXGroup;
+			children = (
+				A416A4D42B2115DA0037F5E3 /* ThreeMap.swift */,
+				A416A4D62B2115FB0037F5E3 /* MapThreeDView.swift */,
+				A416A4D82B21160D0037F5E3 /* CircleImage.swift */,
+				A416A4DA2B21161B0037F5E3 /* ThreeMapView.swift */,
+			);
+			path = ThreeDMap;
+			sourceTree = "<group>";
+		};
+		A41B04802B18621800C8CEA5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A41B04792B18620D00C8CEA5 /* fender_stratocaster.usdz */,
+				A41B047A2B18620D00C8CEA5 /* teapot.usdz */,
+				A41B04782B18620D00C8CEA5 /* toy_biplane.usdz */,
+				A41B047B2B18620D00C8CEA5 /* toy_robot_vintage.usdz */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		A4A297192AFC514F0037E4D2 /* Gif */ = {
 			isa = PBXGroup;
 			children = (
@@ -195,6 +243,7 @@
 		AB4A7E312954DB79005E55CB /* MoGallery */ = {
 			isa = PBXGroup;
 			children = (
+				A416A4D32B2115C10037F5E3 /* ThreeDMap */,
 				AB4A7E322954DB79005E55CB /* ThreeTubesApp.swift */,
 				ABEF9FAB2955419800F1CD90 /* AppModel.swift */,
 				ABBA1C542A91278A00ABE377 /* AppModel_video.swift */,
@@ -241,6 +290,7 @@
 		AB4A7E482954DFB4005E55CB /* Photos */ = {
 			isa = PBXGroup;
 			children = (
+				A41B04802B18621800C8CEA5 /* Model */,
 				AB4A7E512954DFB4005E55CB /* PhotoCollectionView.swift */,
 				AB4A7E4A2954DFB4005E55CB /* PhotosModel.swift */,
 				AB4A7E4F2954DFB4005E55CB /* PhotoCollection.swift */,
@@ -249,6 +299,8 @@
 				AB4A7E492954DFB4005E55CB /* PhotoAssetCollection.swift */,
 				AB4A7E532954DFB4005E55CB /* PhotoAsset.swift */,
 				AB4A7E552954DFB4005E55CB /* PhotoLibrary.swift */,
+				A41B04742B1861C900C8CEA5 /* ModelPlace.swift */,
+				A41B04762B1861E500C8CEA5 /* Model.swift */,
 			);
 			path = Photos;
 			sourceTree = "<group>";
@@ -342,6 +394,9 @@
 				AB4A7E822954E089005E55CB /* GoogleSignIn */,
 				AB4A7E842954E089005E55CB /* GoogleSignInSwift */,
 				AB07BC4329C0D8080079C149 /* YouTubePlayerKit */,
+				A41B04822B18630900C8CEA5 /* FocusEntity */,
+				A4066E7B2B1FD28000086491 /* SmartHitTest */,
+				A4066E7E2B1FD35900086491 /* FocusNode */,
 			);
 			productName = MoGallery;
 			productReference = AB4A7E2F2954DB79005E55CB /* 3Tubes.app */;
@@ -375,6 +430,9 @@
 				AB4A7E782954E050005E55CB /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 				AB4A7E812954E089005E55CB /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */,
 				AB07BC4229C0D8080079C149 /* XCRemoteSwiftPackageReference "YouTubePlayerKit" */,
+				A41B04812B18630900C8CEA5 /* XCRemoteSwiftPackageReference "FocusEntity" */,
+				A4066E7A2B1FD28000086491 /* XCRemoteSwiftPackageReference "ARKit-SmartHitTest" */,
+				A4066E7D2B1FD35800086491 /* XCRemoteSwiftPackageReference "ARKit-FocusNode" */,
 			);
 			productRefGroup = AB4A7E302954DB79005E55CB /* Products */;
 			projectDirPath = "";
@@ -390,12 +448,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A41B047E2B18620D00C8CEA5 /* teapot.usdz in Resources */,
+				A41B047D2B18620D00C8CEA5 /* fender_stratocaster.usdz in Resources */,
 				A4555ABA2B18587700BB8AC7 /* LaunchScreen.storyboard in Resources */,
 				A4555AB62B18570600BB8AC7 /* white-env.jpg in Resources */,
 				AB4A7E3A2954DB7A005E55CB /* Preview Assets.xcassets in Resources */,
 				A4555AB52B18570600BB8AC7 /* air_jordan_1_retro_high_tie_dye.usdz in Resources */,
+				A41B047F2B18620D00C8CEA5 /* toy_robot_vintage.usdz in Resources */,
 				A4555AB92B18587700BB8AC7 /* Main.storyboard in Resources */,
 				AB4A7E742954DFB4005E55CB /* GoogleService-Info.plist in Resources */,
+				A41B047C2B18620D00C8CEA5 /* toy_biplane.usdz in Resources */,
 				AB4A7E882954FAB2005E55CB /* README.md in Resources */,
 				A4A2971F2AFC54EA0037E4D2 /* indside.jpg in Resources */,
 				AB4A7E372954DB7A005E55CB /* Assets.xcassets in Resources */,
@@ -413,14 +475,17 @@
 				A49857D52AFD25E8008CF826 /* ARMeshGeometry+Ext.swift in Sources */,
 				AB4A7E6A2954DFB4005E55CB /* PhotoItemView.swift in Sources */,
 				A4555AB02B18566300BB8AC7 /* ModelViewer.swift in Sources */,
+				A416A4D72B2115FB0037F5E3 /* MapThreeDView.swift in Sources */,
 				AB4A7E5E2954DFB4005E55CB /* GoogleSignInButton.swift in Sources */,
 				AB4DB025298CB6F600F35448 /* MapTabView.swift in Sources */,
 				A49857D72AFD25F9008CF826 /* MDLMesh+Ext.swift in Sources */,
+				A41B04772B1861E500C8CEA5 /* Model.swift in Sources */,
 				AB07BC4129BD68000079C149 /* Settings.swift in Sources */,
 				A49857D32AFD25D1008CF826 /* ARFrame+Ext.swift in Sources */,
 				AB4A7E6B2954DFB4005E55CB /* PhotoCollection.swift in Sources */,
 				AB4A7E682954DFB4005E55CB /* CachedImageManager.swift in Sources */,
 				AB07BC3D29BD180F0079C149 /* GalleryModel-upload.swift in Sources */,
+				A416A4D52B2115DA0037F5E3 /* ThreeMap.swift in Sources */,
 				ABCDDB90295D1A3F0074CB2F /* CameraModel.swift in Sources */,
 				AB4A7E6D2954DFB4005E55CB /* PhotoCollectionView.swift in Sources */,
 				AB59AABF298AB5AE0077269E /* MapView.swift in Sources */,
@@ -432,7 +497,9 @@
 				ABEF9FAC2955419800F1CD90 /* AppModel.swift in Sources */,
 				AB4A7E702954DFB4005E55CB /* ThumbnailView.swift in Sources */,
 				AB7C0D4E2975DBE200ACC200 /* CameraView.swift in Sources */,
+				A41B04752B1861C900C8CEA5 /* ModelPlace.swift in Sources */,
 				AB281C5E2961268F007328EB /* StringMisc.swift in Sources */,
+				A416A4D92B21160D0037F5E3 /* CircleImage.swift in Sources */,
 				ABEA73E8296B363F00DC1BF0 /* GalleryPickerView.swift in Sources */,
 				ABCF7C3129ECB3E000F3527B /* WebView.swift in Sources */,
 				A49857DB2AFD2628008CF826 /* Helpers.swift in Sources */,
@@ -451,6 +518,7 @@
 				A4A2971B2AFC51780037E4D2 /* UiImage.swift in Sources */,
 				ABEA5B992995EF2A005E7148 /* MetaEntry.swift in Sources */,
 				ABEA5BB929980809005E7148 /* ShareSheet.swift in Sources */,
+				A416A4DB2B21161B0037F5E3 /* ThreeMapView.swift in Sources */,
 				AB4A7E602954DFB4005E55CB /* LoginView.swift in Sources */,
 				A49857D12AFD259E008CF826 /* ExportViewController.swift in Sources */,
 				AB07BC3F29BD18FF0079C149 /* GalleryModel-add.swift in Sources */,
@@ -679,6 +747,30 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		A4066E7A2B1FD28000086491 /* XCRemoteSwiftPackageReference "ARKit-SmartHitTest" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/maxxfrazer/ARKit-SmartHitTest";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+		A4066E7D2B1FD35800086491 /* XCRemoteSwiftPackageReference "ARKit-FocusNode" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/maxxfrazer/ARKit-FocusNode";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+		A41B04812B18630900C8CEA5 /* XCRemoteSwiftPackageReference "FocusEntity" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/maxxfrazer/FocusEntity";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
 		AB07BC4229C0D8080079C149 /* XCRemoteSwiftPackageReference "YouTubePlayerKit" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/SvenTiigi/YouTubePlayerKit";
@@ -707,6 +799,21 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		A4066E7B2B1FD28000086491 /* SmartHitTest */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A4066E7A2B1FD28000086491 /* XCRemoteSwiftPackageReference "ARKit-SmartHitTest" */;
+			productName = SmartHitTest;
+		};
+		A4066E7E2B1FD35900086491 /* FocusNode */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A4066E7D2B1FD35800086491 /* XCRemoteSwiftPackageReference "ARKit-FocusNode" */;
+			productName = FocusNode;
+		};
+		A41B04822B18630900C8CEA5 /* FocusEntity */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A41B04812B18630900C8CEA5 /* XCRemoteSwiftPackageReference "FocusEntity" */;
+			productName = FocusEntity;
+		};
 		AB07BC4329C0D8080079C149 /* YouTubePlayerKit */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = AB07BC4229C0D8080079C149 /* XCRemoteSwiftPackageReference "YouTubePlayerKit" */;

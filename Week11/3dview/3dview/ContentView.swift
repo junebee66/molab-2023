@@ -82,6 +82,6 @@ struct SceneKitView: UIViewRepresentable {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        SceneKitView()
     }
 }

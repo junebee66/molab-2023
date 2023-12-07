@@ -23,7 +23,7 @@ struct MainView: View {
     var body: some View {
         TabView(selection: $app.selectedTab) {
 //            GalleryTabView()
-                ModelView()
+            ModelView()
                 .tabItem {
                     Label("Gallery", systemImage: "rectangle.stack")
                 }
@@ -38,11 +38,19 @@ struct MainView: View {
                     Label("Camera", systemImage: "camera.fill")
                 }
                 .tag(TabTag.camera)
-            MapTabView(locs: lobbyModel.mapRegion.locs)
+            
+//            MapTabView(locs: lobbyModel.mapRegion.locs)
+//                .tabItem {
+//                    Label("Map", systemImage: "globe")
+//                }
+//                .tag(TabTag.map)
+            
+            ThreeDMapView()
                 .tabItem {
                     Label("Map", systemImage: "globe")
                 }
                 .tag(TabTag.map)
+            
             settingsView()
                 .tabItem {
                     Label("Info", systemImage: "info.circle")
