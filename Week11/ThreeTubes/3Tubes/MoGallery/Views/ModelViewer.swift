@@ -6,7 +6,6 @@
 //
 
 import SwiftUI
-
 import SceneKit
 
 //struct ContentView: View {
@@ -16,12 +15,42 @@ import SceneKit
 //    }
 //}
 
-struct ModelView: UIViewRepresentable {
+struct ModelView: View {
+        
+    @EnvironmentObject var app: AppModel
+    
+    var body: some View {
+        ModelViewBridge(appURL: app.modelURL)
+    }
+}
+
+struct ModelViewBridge: UIViewRepresentable {
+//    var app: AppModel;
+    var appURL: URL?
+    
     func makeUIView(context: Context) -> SCNView {
         let sceneView = SCNView()
         
+//        var scene: SCNScene?
         // Load .obj file
-        let scene = SCNScene(named: "air_jordan_1_retro_high_tie_dye.usdz")
+        var scene = SCNScene(named: "air_jordan_1_retro_high_tie_dye.usdz")
+        
+        print("obj created", appURL ?? "no value")
+        
+//            if appURL != nil{
+//                do {
+//                    scene = try SCNScene(url: appURL!, options: nil);
+//                    print("obj updated")
+//                } catch {print("error", error)}
+//            }
+        
+//        if app.modelURL != nil{
+//            do {
+//                scene = try SCNScene(url: app.modelURL!, options: nil);
+//                print("obj updated")
+//            } catch {print("error", error)}
+//        }
+
         
         // Add camera node
         let cameraNode = SCNNode()
@@ -66,7 +95,15 @@ struct ModelView: UIViewRepresentable {
     }
     
     func updateUIView(_ uiView: SCNView, context: Context) {
-        // Update the view if needed
+        var scene:SCNScene?
+       print("update UI View", appURL ?? "no value")
+        if appURL != nil{
+            do {
+                scene = try SCNScene(url: appURL!, options: nil);
+                uiView.scene = scene
+                print("obj updated")
+            } catch {print("error", error)}
+        }
     }
 }
 

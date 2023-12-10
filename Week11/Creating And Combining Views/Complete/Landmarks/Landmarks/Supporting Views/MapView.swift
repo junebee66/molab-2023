@@ -19,7 +19,7 @@ struct MapView: UIViewRepresentable {
         
         let mapCamera = MKMapCamera()
         mapCamera.pitch = 45
-        mapCamera.altitude = 100 // example altitude
+        mapCamera.altitude = 500 // example altitude
         mapCamera.heading = 45
 
         

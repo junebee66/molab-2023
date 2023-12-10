@@ -331,6 +331,7 @@ class CameraCapture: NSObject {
     }
 }
 
+//add photo to stream
 extension CameraCapture: AVCapturePhotoCaptureDelegate {
     
     func photoOutput(_ output: AVCapturePhotoOutput, didFinishProcessingPhoto photo: AVCapturePhoto, error: Error?) {

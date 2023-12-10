@@ -24,6 +24,9 @@ struct MainView: View {
         TabView(selection: $app.selectedTab) {
 //            GalleryTabView()
             ModelView()
+                .onAppear() {
+                    print("onAppear app.modelURL", app.modelURL ?? "na")
+                }
                 .tabItem {
                     Label("Gallery", systemImage: "rectangle.stack")
                 }

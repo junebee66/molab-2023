@@ -9,6 +9,8 @@ import SwiftUI
 import AVKit
 import Photos
 import YouTubePlayerKit
+import RealityKit
+import ARKit
 
 class AppModel: ObservableObject {
     
@@ -23,6 +25,9 @@ class AppModel: ObservableObject {
     lazy var galleryModel = GalleryModel(self)
     lazy var photosModel = PhotosModel(self)
     lazy var metaModel = MetaModel(self)
+    @Published var modelURL: URL?
+    var arView:ARView?
+    
     
     var locationManager = LocationManager()
     var geometrySize = CGSize.zero

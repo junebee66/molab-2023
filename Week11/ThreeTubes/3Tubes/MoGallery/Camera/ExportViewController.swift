@@ -14,6 +14,8 @@ class Model : ObservableObject {
 
 struct ExportView : View {
     @StateObject var model = Model();
+    @EnvironmentObject var app: AppModel;
+    
     var body: some View {
         ZStack {
             ARViewContainerExport(model: model)
@@ -25,6 +27,8 @@ struct ExportView : View {
                     guard let arView = model.arView else { return }
                     do {
                         let url = try exportArView(arView, fileName: "arexport.obj")
+                        app.modelURL = url
+                        
                         print("Export Action url", url)
                     } catch {
                         print("exportArView error", error)
@@ -89,6 +93,7 @@ func exportArView(_ arView: ARView, fileName: String) throws -> URL {
         }
         return asset
     }
+    //export to obj
     func export(asset: MDLAsset) throws -> URL {
         let directory = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first!
         let url = directory.appendingPathComponent(fileName)

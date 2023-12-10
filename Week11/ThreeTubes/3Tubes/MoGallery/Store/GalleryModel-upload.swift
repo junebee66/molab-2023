@@ -39,18 +39,20 @@ extension GalleryModel {
         
         // Create file metadata including the content type
         let metadata = StorageMetadata()
-        metadata.contentType = "image/jpeg"
+        metadata.contentType = "image/jpeg" //change
         metadata.cacheControl = "public,max-age=300"
         
+    
         let filePathPre = "-mo/\(app.settings.storePrefix)/\(uid)/\(user.uploadCount)"
-        let filePath = "\(filePathPre).jpeg"
+        let filePath = "\(filePathPre).jpeg" //change
         let storageRef = storage.reference(withPath: filePath)
         
         // fullRezData
         // + mediaPathFullRez
         // + storagePathFullRez
-        let filePathFullRez = "/\(filePathPre)z.jpeg"
+        let filePathFullRez = "/\(filePathPre)z.jpeg" //chnage
         
+        //firebase send
         storageRef.putData(imageData, metadata: metadata) { metadata, error in
             guard let metad = metadata else {
                 print("uploadImageData no metadata")

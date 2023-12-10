@@ -111,6 +111,7 @@ final class PhotosModel: ObservableObject {
         Task {
             do {
                 // try await photoCollection.addImage(imageData)
+                //firebase
                 let imageData = app.galleryModel.getSaveImageData(photoInfo: photoInfo)
                 if let imageData {
                     try await photoCollection!.addImage(imageData)
