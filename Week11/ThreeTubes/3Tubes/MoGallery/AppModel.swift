@@ -26,6 +26,7 @@ class AppModel: ObservableObject {
     lazy var photosModel = PhotosModel(self)
     lazy var metaModel = MetaModel(self)
     @Published var modelURL: URL?
+    @Published var mtlFile: MDLAsset?
     var arView:ARView?
     
     

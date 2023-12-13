@@ -29,6 +29,7 @@ struct ExportView : View {
                         let url = try exportArView(arView, fileName: "arexport.obj")
                         app.modelURL = url
                         
+                        
                         print("Export Action url", url)
                     } catch {
                         print("exportArView error", error)
@@ -43,6 +44,7 @@ struct ExportView : View {
 
 struct ARViewContainerExport: UIViewRepresentable {
     var model:Model
+    
     func makeUIView(context: Context) -> ARView {
         let arView = ARView(frame: .zero)
         // !!@ delegate not used
@@ -84,12 +86,17 @@ func exportArView(_ arView: ARView, fileName: String) throws -> URL {
     guard let camera = arView.session.currentFrame?.camera else {
         throw ExportError.noCamera
     }
+    
     func convertToAsset(meshAnchors: [ARMeshAnchor]) -> MDLAsset? {
+        @EnvironmentObject var app: AppModel;
+        
         guard let device = MTLCreateSystemDefaultDevice() else {return nil}
         let asset = MDLAsset()
         for anchor in meshAnchors {
             let mdlMesh = anchor.geometry.toMDLMesh(device: device, camera: camera, modelMatrix: anchor.transform)
             asset.add(mdlMesh)
+//            app.mtlFile = asset
+            
         }
         return asset
     }

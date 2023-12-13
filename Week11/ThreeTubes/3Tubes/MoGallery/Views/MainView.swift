@@ -31,12 +31,15 @@ struct MainView: View {
                     Label("Gallery", systemImage: "rectangle.stack")
                 }
                 .tag(TabTag.gallery)
-            PhotoCollectionView()
+//            PhotoCollectionView()
+            Home()
                 .tabItem {
                     Label("Photos", systemImage: "photo.on.rectangle")
                 }
                 .tag(TabTag.photos)
-            ExportView()
+//            ExportView()
+//            ScanView()
+            ScanBridgeView()
                 .tabItem {
                     Label("Camera", systemImage: "camera.fill")
                 }

@@ -27,6 +27,7 @@ struct ModelView: View {
 struct ModelViewBridge: UIViewRepresentable {
 //    var app: AppModel;
     var appURL: URL?
+//    var matFile:
     
     func makeUIView(context: Context) -> SCNView {
         let sceneView = SCNView()
@@ -94,28 +95,51 @@ struct ModelViewBridge: UIViewRepresentable {
         return sceneView
     }
     
-    func updateUIView(_ uiView: SCNView, context: Context) {
-        var scene:SCNScene?
-       print("update UI View", appURL ?? "no value")
-        if appURL != nil{
-            do {
-                scene = try SCNScene(url: appURL!, options: nil);
-                uiView.scene = scene
-                print("obj updated")
-            } catch {print("error", error)}
-        }
-    }
-}
-
-//@main
-//struct YourApp: App {
-//    var body: some Scene {
-//        WindowGroup {
-//            ContentView()
+//    func updateUIView(_ uiView: SCNView, context: Context) {
+//        var scene:SCNScene?
+//       print("update UI View", appURL ?? "no value")
+//        if appURL != nil{
+//            do {
+//                let objMaterial = SCNMaterial()
+//                objMaterial.diffuse.contents = UIImage(named: "texture.png")
+//
+//                scene = try SCNScene(url: appURL!, options: nil);
+//                print("this is SCNscene", scene)
+////                scene.materials = [objMaterial]
+//                uiView.scene = scene
+//                print("obj updated")
+//            } catch {print("error", error)}
 //        }
 //    }
-//}
+    
+    
+    func updateUIView(_ uiView: SCNView, context: Context) {
+        var scene: SCNScene?
+        print("update UI View", appURL ?? "no value")
+        if let appURL = appURL {
+            do {
+                let objMaterial = SCNMaterial()
+                objMaterial.diffuse.contents = UIImage(named: "texture.png")
 
+                scene = try SCNScene(url: appURL, options: nil)
+//                print("this is SCNscene", scene)
+
+                // Assuming you want to apply the material to all geometries in the scene
+                scene?.rootNode.childNodes.forEach { node in
+                    if let geometry = node.geometry {
+                        geometry.materials = [objMaterial]
+                    }
+                }
+
+                uiView.scene = scene
+                print("obj updated")
+            } catch {
+                print("error", error)
+            }
+        }
+    }
+
+}
 
 struct ModelView_Previews: PreviewProvider {
     static var previews: some View {

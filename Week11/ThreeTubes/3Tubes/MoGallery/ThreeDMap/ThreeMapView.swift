@@ -8,6 +8,10 @@ A view that hosts an `MKMapView`.
 import SwiftUI
 import MapKit
 
+extension CLLocationCoordinate2D{
+    static let parking = CLLocationCoordinate2D(latitude: 40.6929116, longitude: -73.9874613)
+}
+
 struct ThreeMapView: UIViewRepresentable {
     func makeUIView(context: Context) -> MKMapView {
 //        MKMapView(frame: .zero)
@@ -18,9 +22,10 @@ struct ThreeMapView: UIViewRepresentable {
 
         
         let mapCamera = MKMapCamera()
-        mapCamera.pitch = 45
+        mapCamera.pitch = 60
         mapCamera.altitude = 100 // example altitude
-        mapCamera.heading = 45
+        mapCamera.heading = 180
+        
 
         
         map.camera = mapCamera
@@ -38,8 +43,17 @@ struct ThreeMapView: UIViewRepresentable {
 //        let region = MKCoordinateRegion(center: coordinate, span: span)
         
         let region = MKCoordinateRegion(center: eiffelTowerCoordinates, latitudinalMeters: 1000, longitudinalMeters: 100)
-        view.setRegion(region, animated: true)
-    }
+//        view.setRegion(region, animated: true)
+        
+        let parkingAnnotation = MKPointAnnotation()
+                parkingAnnotation.title = "June"
+                parkingAnnotation.coordinate = .parking
+                view.addAnnotation(parkingAnnotation)
+                
+                // Adding the custom Map code
+                view.addOverlay(MKCircle(center: .parking, radius: 50), level: .aboveLabels)
+                view.camera = MKMapCamera(lookingAtCenter: .parking, fromEyeCoordinate: .parking, eyeAltitude: 300)
+            }
 }
 
 #if DEBUG
