@@ -21,8 +21,9 @@ struct GalleryModelView: UIViewRepresentable {
         let sceneView = SCNView()
         
         // Load .obj file
-        let scene = SCNScene(named: "air_jordan_1_retro_high_tie_dye.usdz")
-        
+        let scene = SCNScene(named: "20231107sptial_video.usdz")
+//        let scene = SCNScene(named: "air_jordan_1_retro_high_tie_dye.usdz")
+
         // Add camera node
         let cameraNode = SCNNode()
         cameraNode.camera = SCNCamera()

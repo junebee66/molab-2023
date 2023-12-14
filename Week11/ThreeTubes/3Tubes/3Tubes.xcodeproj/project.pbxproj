@@ -38,6 +38,7 @@
 		A4749C642B2A5AE4007CC45E /* BlurView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4749C592B2A5AE4007CC45E /* BlurView.swift */; };
 		A4749C652B2A5AE4007CC45E /* UpdateStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4749C5A2B2A5AE4007CC45E /* UpdateStore.swift */; };
 		A4749C662B2A5AE4007CC45E /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4749C5B2B2A5AE4007CC45E /* TabBar.swift */; };
+		A4749C682B2A9018007CC45E /* 20231107sptial_video.usdz in Resources */ = {isa = PBXBuildFile; fileRef = A4749C672B2A9018007CC45E /* 20231107sptial_video.usdz */; };
 		A48B8BFE2B28F5770062BA74 /* texture.png in Resources */ = {isa = PBXBuildFile; fileRef = A48B8BFD2B28F5770062BA74 /* texture.png */; };
 		A49857D12AFD259E008CF826 /* ExportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A49857D02AFD259E008CF826 /* ExportViewController.swift */; };
 		A49857D32AFD25D1008CF826 /* ARFrame+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = A49857D22AFD25D1008CF826 /* ARFrame+Ext.swift */; };
@@ -47,6 +48,10 @@
 		A49857DB2AFD2628008CF826 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = A49857DA2AFD2628008CF826 /* Helpers.swift */; };
 		A4A2971B2AFC51780037E4D2 /* UiImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4A2971A2AFC51780037E4D2 /* UiImage.swift */; };
 		A4A2971F2AFC54EA0037E4D2 /* indside.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A4A2971E2AFC54EA0037E4D2 /* indside.jpg */; };
+		A4A99C7A2B2ABF5600A8828A /* headShake.usdz in Resources */ = {isa = PBXBuildFile; fileRef = A4A99C792B2ABF5600A8828A /* headShake.usdz */; };
+		A4A99C7C2B2AC6B600A8828A /* sene.usdz in Resources */ = {isa = PBXBuildFile; fileRef = A4A99C7B2B2AC6B600A8828A /* sene.usdz */; };
+		A4A99C7E2B2ACC4000A8828A /* scene.usdz in Resources */ = {isa = PBXBuildFile; fileRef = A4A99C7D2B2ACC4000A8828A /* scene.usdz */; };
+		A4A99C802B2AD13D00A8828A /* originalScene.usdz in Resources */ = {isa = PBXBuildFile; fileRef = A4A99C7F2B2AD13D00A8828A /* originalScene.usdz */; };
 		AB07BC3D29BD180F0079C149 /* GalleryModel-upload.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB07BC3C29BD180F0079C149 /* GalleryModel-upload.swift */; };
 		AB07BC3F29BD18FF0079C149 /* GalleryModel-add.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB07BC3E29BD18FF0079C149 /* GalleryModel-add.swift */; };
 		AB07BC4129BD68000079C149 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB07BC4029BD68000079C149 /* Settings.swift */; };
@@ -135,6 +140,7 @@
 		A4749C592B2A5AE4007CC45E /* BlurView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BlurView.swift; path = MoGallery/GalleryView/BlurView.swift; sourceTree = SOURCE_ROOT; };
 		A4749C5A2B2A5AE4007CC45E /* UpdateStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UpdateStore.swift; path = MoGallery/GalleryView/UpdateStore.swift; sourceTree = SOURCE_ROOT; };
 		A4749C5B2B2A5AE4007CC45E /* TabBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TabBar.swift; path = MoGallery/GalleryView/TabBar.swift; sourceTree = SOURCE_ROOT; };
+		A4749C672B2A9018007CC45E /* 20231107sptial_video.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; name = 20231107sptial_video.usdz; path = MoGallery/Gallery/20231107sptial_video.usdz; sourceTree = SOURCE_ROOT; };
 		A48B8BFD2B28F5770062BA74 /* texture.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = texture.png; path = ../../../../../../Desktop/texture.png; sourceTree = "<group>"; };
 		A49857D02AFD259E008CF826 /* ExportViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExportViewController.swift; sourceTree = "<group>"; };
 		A49857D22AFD25D1008CF826 /* ARFrame+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ARFrame+Ext.swift"; sourceTree = "<group>"; };
@@ -144,6 +150,10 @@
 		A49857DA2AFD2628008CF826 /* Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
 		A4A2971A2AFC51780037E4D2 /* UiImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UiImage.swift; sourceTree = "<group>"; };
 		A4A2971E2AFC54EA0037E4D2 /* indside.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = indside.jpg; sourceTree = "<group>"; };
+		A4A99C792B2ABF5600A8828A /* headShake.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; name = headShake.usdz; path = MoGallery/Gallery/headShake.usdz; sourceTree = SOURCE_ROOT; };
+		A4A99C7B2B2AC6B600A8828A /* sene.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; name = sene.usdz; path = MoGallery/Gallery/sene.usdz; sourceTree = SOURCE_ROOT; };
+		A4A99C7D2B2ACC4000A8828A /* scene.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; name = scene.usdz; path = MoGallery/Gallery/scene.usdz; sourceTree = SOURCE_ROOT; };
+		A4A99C7F2B2AD13D00A8828A /* originalScene.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; name = originalScene.usdz; path = MoGallery/Gallery/originalScene.usdz; sourceTree = SOURCE_ROOT; };
 		AB07BC3C29BD180F0079C149 /* GalleryModel-upload.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GalleryModel-upload.swift"; sourceTree = "<group>"; };
 		AB07BC3E29BD18FF0079C149 /* GalleryModel-add.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GalleryModel-add.swift"; sourceTree = "<group>"; };
 		AB07BC4029BD68000079C149 /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
@@ -404,6 +414,11 @@
 		ABEA5BBA299808E4005E7148 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				A4A99C7F2B2AD13D00A8828A /* originalScene.usdz */,
+				A4A99C7D2B2ACC4000A8828A /* scene.usdz */,
+				A4A99C7B2B2AC6B600A8828A /* sene.usdz */,
+				A4A99C792B2ABF5600A8828A /* headShake.usdz */,
+				A4749C672B2A9018007CC45E /* 20231107sptial_video.usdz */,
 				A4555AB82B18587700BB8AC7 /* LaunchScreen.storyboard */,
 				A4555AB72B18587700BB8AC7 /* Main.storyboard */,
 				A4555AB32B18570600BB8AC7 /* air_jordan_1_retro_high_tie_dye.usdz */,
@@ -498,15 +513,20 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A4749C682B2A9018007CC45E /* 20231107sptial_video.usdz in Resources */,
 				A41B047E2B18620D00C8CEA5 /* teapot.usdz in Resources */,
 				A48B8BFE2B28F5770062BA74 /* texture.png in Resources */,
 				A4749C142B290B61007CC45E /* Scan.storyboard in Resources */,
+				A4A99C7A2B2ABF5600A8828A /* headShake.usdz in Resources */,
+				A4A99C802B2AD13D00A8828A /* originalScene.usdz in Resources */,
 				A41B047D2B18620D00C8CEA5 /* fender_stratocaster.usdz in Resources */,
 				A4555ABA2B18587700BB8AC7 /* LaunchScreen.storyboard in Resources */,
 				A4555AB62B18570600BB8AC7 /* white-env.jpg in Resources */,
 				AB4A7E3A2954DB7A005E55CB /* Preview Assets.xcassets in Resources */,
 				A4555AB52B18570600BB8AC7 /* air_jordan_1_retro_high_tie_dye.usdz in Resources */,
+				A4A99C7C2B2AC6B600A8828A /* sene.usdz in Resources */,
 				A41B047F2B18620D00C8CEA5 /* toy_robot_vintage.usdz in Resources */,
+				A4A99C7E2B2ACC4000A8828A /* scene.usdz in Resources */,
 				A4555AB92B18587700BB8AC7 /* Main.storyboard in Resources */,
 				AB4A7E742954DFB4005E55CB /* GoogleService-Info.plist in Resources */,
 				A41B047C2B18620D00C8CEA5 /* toy_biplane.usdz in Resources */,

@@ -37,9 +37,8 @@ struct MainView: View {
                     Label("Photos", systemImage: "photo.on.rectangle")
                 }
                 .tag(TabTag.photos)
-//            ExportView()
-//            ScanView()
-            ScanBridgeView()
+            ExportView()
+//            ScanBridgeView()
                 .tabItem {
                     Label("Camera", systemImage: "camera.fill")
                 }
